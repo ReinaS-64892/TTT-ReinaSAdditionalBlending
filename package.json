@@ -1,0 +1,12 @@
+{
+  "name": "net.rs64.ttt-reinas-additional-blending",
+  "displayName": "TTT-ReinaSAdditionalBlending",
+  "version": "0.0.0",
+  "unity": "2022.3",
+  "description": "TexTransTool ReinaS Additional Blending",
+  "author": {
+    "name": "ReinaSakiria",
+    "url": "https://rs64.net/"
+  },
+  "url": "https://github.com/ReinaS-64892/TTT-ReinaSAdditionalBlending"
+}

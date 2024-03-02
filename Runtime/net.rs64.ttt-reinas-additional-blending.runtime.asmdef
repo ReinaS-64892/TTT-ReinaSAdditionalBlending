@@ -1,0 +1,16 @@
+{
+    "name": "net.rs64.ttt-reinas-additional-blending.runtime",
+    "rootNamespace": "",
+    "references": [
+        "net.rs64.tex-trans-core"
+    ],
+    "includePlatforms": [],
+    "excludePlatforms": [],
+    "allowUnsafeCode": false,
+    "overrideReferences": false,
+    "precompiledReferences": [],
+    "autoReferenced": true,
+    "defineConstraints": [],
+    "versionDefines": [],
+    "noEngineReferences": false
+}
