@@ -15,7 +15,7 @@ Shader "Hidden/RenaSAdditionalBlending"
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            #pragma multi_compile_local_fragment RenaSAdditionalBlending_LinearLightShine RenaSAdditionalBlending_MaskAlphaOverride
+            #pragma multi_compile_local_fragment RenaSAdditionalBlending_LinearLightShine RenaSAdditonalBlending_MaskAlphaOverride RenaSAdditionalBlending_ColorOverride RenaSAdditionalBlending_AlphaSubtract
 
             #include "UnityCG.cginc"
 
@@ -75,7 +75,11 @@ Shader "Hidden/RenaSAdditionalBlending"
                 #if RenaSAdditionalBlending_LinearLightShine
                 BlendColor = Bcol + 2.0 * Acol - 1.0;
                 #elif RenaSAdditionalBlending_MaskAlphaOverride
-                return GammaToLinear(float4(Bcol, 1 - AddColor.a));
+                return GammaToLinear(float4(Bcol, saturate(1 - AddColor.a)));
+                #elif RenaSAdditionalBlending_ColorOverride
+                return GammaToLinear(float4(Acol, BaseColor.a));
+                #elif RenaSAdditionalBlending_AlphaSubtract
+                return GammaToLinear(float4(Bcol, saturate(BaseColor.a - AddColor.a)));
                 #endif
 
 

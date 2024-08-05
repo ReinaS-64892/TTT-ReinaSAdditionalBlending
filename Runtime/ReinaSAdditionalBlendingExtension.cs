@@ -11,6 +11,8 @@ namespace net.rs64.TTTReinaSAdditionalBlending
             var shaderKeywords = new HashSet<string>(){
                 "RenaSAdditionalBlending/LinearLightShine",
                 "RenaSAdditionalBlending/MaskAlphaOverride",
+                "RenaSAdditionalBlending/ColorOverride",
+                "RenaSAdditionalBlending/AlphaSubtract",
             };
             return (shaderKeywords,Shader.Find("Hidden/RenaSAdditionalBlending"));
         }
