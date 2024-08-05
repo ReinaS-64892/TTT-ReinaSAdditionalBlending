@@ -15,7 +15,7 @@ Shader "Hidden/RenaSAdditionalBlending"
             HLSLPROGRAM
             #pragma vertex vert
             #pragma fragment frag
-            #pragma multi_compile_local_fragment RenaSAdditionalBlending_LinearLightShine RenaSAdditonalBlending_MaskAlphaOverride RenaSAdditionalBlending_ColorOverride RenaSAdditionalBlending_AlphaSubtract
+            #pragma multi_compile_local_fragment RenaSAdditionalBlending_LinearLightShine RenaSAdditionalBlending_MaskAlphaOverride RenaSAdditionalBlending_ColorOverride RenaSAdditionalBlending_AlphaSubtract
 
             #include "UnityCG.cginc"
 
