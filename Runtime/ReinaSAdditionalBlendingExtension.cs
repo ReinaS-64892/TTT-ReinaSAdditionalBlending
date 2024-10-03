@@ -1,5 +1,5 @@
 using System.Collections.Generic;
-using net.rs64.TexTransCore.BlendTexture;
+using net.rs64.TexTransUnityCore.BlendTexture;
 using UnityEngine;
 
 namespace net.rs64.TTTReinaSAdditionalBlending
