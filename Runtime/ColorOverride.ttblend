@@ -1,0 +1,11 @@
+#pragma HLSL_Version 2018
+#pragma ColorSpace Gamma
+#pragma Key "RenaSAdditionalBlending/ColorOverride"
+#pragma KeyName_jp "RenaSAdditionalBlending/カラーオーバーライド"
+
+
+float4 ColorBlend(float4 BaseColor, float4 AddColor)
+{
+    float3 Acol = AddColor.rgb;
+    return float4(Acol, BaseColor.a);
+}

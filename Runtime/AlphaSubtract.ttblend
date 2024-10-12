@@ -1,0 +1,11 @@
+#pragma HLSL_Version 2018
+#pragma ColorSpace Gamma
+#pragma Key "RenaSAdditionalBlending/AlphaSubtract"
+#pragma KeyName_jp "RenaSAdditionalBlending/アルファ減算"
+
+
+float4 ColorBlend(float4 BaseColor, float4 AddColor)
+{
+    float3 Bcol = BaseColor.rgb;
+    return float4(Bcol, saturate(BaseColor.a - AddColor.a));
+}
