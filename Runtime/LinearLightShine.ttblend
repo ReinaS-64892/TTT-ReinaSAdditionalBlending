@@ -1,0 +1,17 @@
+#pragma HLSL_Version 2018
+#pragma ColorSpace Gamma
+#pragma Key "RenaSAdditionalBlending/LinearLightShine"
+#pragma KeyName_jp "RenaSAdditionalBlending/リニアライトシャイン"
+
+#include "./AlphaBlending.hlsl"
+
+float4 ColorBlend(float4 BaseColor, float4 AddColor)
+{
+    float3 Bcol = BaseColor.rgb;
+    float3 Acol = AddColor.rgb;
+    float3 BlendColor = float3(0, 0, 0);
+
+    BlendColor = Bcol + 2.0 * Acol - 1.0;
+
+    return AlphaBlending(BaseColor, AddColor, BlendColor);
+}
