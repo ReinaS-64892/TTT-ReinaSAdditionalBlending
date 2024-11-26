@@ -1,8 +1,18 @@
-#pragma HLSL_Version 2018
-#pragma ColorSpace Gamma
-#pragma Key "RenaSAdditionalBlending/AlphaSubtract"
-#pragma KeyName_jp "RenaSAdditionalBlending/アルファ減算"
+/*
+BEGIN__TT_COMPUTE_SHADER_HEADER
 
+Language HLSL
+LanguageVersion 2018
+
+TTComputeType Blending
+
+ColorSpace Gamma
+
+Key RenaSAdditionalBlending/AlphaSubtract
+KeyName ja RenaSAdditionalBlending/アルファ減算
+
+END__TT_COMPUTE_SHADER_HEADER
+*/
 
 float4 ColorBlend(float4 BaseColor, float4 AddColor)
 {
