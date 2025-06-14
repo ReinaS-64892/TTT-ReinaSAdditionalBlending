@@ -6,10 +6,9 @@ LanguageVersion 2018
 
 TTComputeType Blending
 
-ColorSpace Gamma
 
 Key RenaSAdditionalBlending/LinearLightShine
-KeyName ja RenaSAdditionalBlending/リニアライトシャイン
+KeyName ja-JP RenaSAdditionalBlending/リニアライトシャイン
 
 END__TT_COMPUTE_SHADER_HEADER
 */

@@ -6,10 +6,9 @@ LanguageVersion 2018
 
 TTComputeType Blending
 
-ColorSpace Gamma
 
 Key RenaSAdditionalBlending/AlphaSubtract
-KeyName ja RenaSAdditionalBlending/アルファ減算
+KeyName ja-JP RenaSAdditionalBlending/アルファ減算
 
 END__TT_COMPUTE_SHADER_HEADER
 */

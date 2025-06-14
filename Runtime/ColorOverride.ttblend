@@ -6,10 +6,9 @@ LanguageVersion 2018
 
 TTComputeType Blending
 
-ColorSpace Gamma
 
 Key RenaSAdditionalBlending/ColorOverride
-KeyName ja RenaSAdditionalBlending/カラーオーバーライド
+KeyName ja-JP RenaSAdditionalBlending/カラーオーバーライド
 
 END__TT_COMPUTE_SHADER_HEADER
 */
